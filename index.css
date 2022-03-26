@@ -69,6 +69,35 @@ body {
 
 /*header*/
 
+.justify-content-end {
+    justify-content: flex-end!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FBF5F3;
+    font-size: 1.6em;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #3c46b4;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #0C0C0C !important;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: red;
+    border: red;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -86,12 +115,13 @@ header .navbar {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    z-index: 1;
 }
 
 header .menu {
     display: flex;
-    flex-basis: 50%;
     justify-content: space-between;
+    padding: 1em!important;
 }
 
 header .menu__item {
@@ -219,17 +249,19 @@ a svg {
 
 /*galeria*/
 
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "foto_1 foto_2 foto_3 foto_4"
-    "foto_5 foto_6 foto_7 foto_8";
-    gap: 1em;
+.sec {
+    max-width: 600px;
 }
 
-.foto_1 {
+.carousel-indicators [data-bs-target] {
+    background-color: #D91E36;
+}
+
+.fotos{
+    display: flex;
+    margin: auto;
+}
+/* .foto_1 {
     margin: auto;
     margin-top: 1em;
     border: solid #0C0C0C .3em;
@@ -308,9 +340,9 @@ a svg {
     border-radius: 1em;
     grid-area: foto_8;
     width: 70%;
-    transition: width .5s ease-in-out;
-}
-
+    transition: width .5s ease-in-out; 
+}*/
+/* 
 .foto_1:hover {
     width: 74%;
 }
@@ -341,7 +373,7 @@ a svg {
 
 .foto_8:hover {
     width: 74%;
-}
+} */
 
 /*sobre nosotros*/
 
@@ -358,7 +390,7 @@ a svg {
 }
 
 .sobre__nosotros {
-    position: relative;
+    
     width: 673px;
     text-align: center;
     font-size: 3em;
@@ -562,6 +594,11 @@ a svg {
     }
 
 
+    @media (max-width: 560px) {
+        a svg {
+            padding: 2px;
+        }
+    }
 }
 
 @media (max-width: 420px) {
@@ -579,4 +616,30 @@ a svg {
         "foto_8";
         gap: 1em;
     }
-}
+    /*header*/
+    .menu .menu__item .menu__link {
+        font-size: .5em;
+    }
+
+    /*footer*/
+    .menu .menu__item .footer__link {
+    font-size: .5em;
+    }
+    /*contacto*/
+    form {
+        width: 315px;
+    }
+    .sobre__nosotros {
+        font-size: 1.1em;
+        width: 30rem;
+    }
+
+    /*donde estamos*/
+
+    .donde_estamos__izq {
+        font-size: .6em;
+    }
+    .entregamos {
+        width: 300px; 
+    }
+    }
