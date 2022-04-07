@@ -1,0 +1,25 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/*misc*/
+
+@import './misc/normalize';
+
+/*partials*/
+
+@import './partials/header';
+@import './partials/footer';
+
+/*views*/
+
+@import './views/home';
+@import './views/sobre-nosotros';
+@import './views/galeria';
+@import './views/donde-estamos';
+@import './views/contacto';
+
+/*medias*/
+@import './medias/medias.scss';
+
+
+

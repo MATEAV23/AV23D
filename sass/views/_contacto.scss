@@ -1,0 +1,46 @@
+/*contacto*/
+
+form {
+    width: 450px;
+    margin: auto;
+    background-color: #0C0C0C;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 2em;
+    border-radius: 15px;
+}
+
+.contactanos{
+    color: #FBF5F3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: solid #D91E36 2px;
+    border-radius: 8px;
+    font-size: 1.6em;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.boton {
+    background-color: #D91E36;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.boton:hover {
+    border: solid #FBF5F3 3px;
+    color: #FBF5F3;
+}

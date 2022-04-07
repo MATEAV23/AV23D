@@ -1,0 +1,29 @@
+/*sobre nosotros*/
+
+.sobre_nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.que__es {
+    font-size: 5em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sobre__nosotros {
+    
+    width: 673px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    top: 3em;
+    border: solid #FFFFFF .3em;
+    transition: border .5s ease-in-out;
+}
+
+.sobre__nosotros:hover {
+    border: solid #D91E36 .3em;
+
+}

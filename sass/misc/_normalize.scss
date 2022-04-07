@@ -1,0 +1,51 @@
+/*variables*/
+:root {
+    --principal: #0C0C0C;
+    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Reset*/
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*Globals*/
+
+
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--principal);
+
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+
+
+body {
+    background-size: 100vw 100vh;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 11vh 1fr 11vh;
+    grid-template-areas: 
+    "header "
+    "section1 "
+    "footer ";
+}

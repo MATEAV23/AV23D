@@ -1,0 +1,48 @@
+/*donde estamos*/
+
+.container_donde_estamos{
+    display: flex;
+    align-items: center;
+    gap: 10em;
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+.donde_estamos__izq {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.donde {
+    
+    font-size: 3.6em;
+    border-bottom: solid #D91E36 2px;
+}
+
+.entregamos {
+    
+    width: 500px;
+    font-size: 3.4em;
+    font-weight: bold;
+    
+}
+
+.mapa {
+    width: 400px;
+    height: 400px;
+    left: 50vh;
+    border: solid #0C0C0C 3px;
+    border-radius: 1em;
+    transition: all .3s ease-in;
+}
+
+.mapa:hover {
+    width: 450px;
+    height: 450px;
+}
+
+.donde_estamos__der {
+    display: flex;
+}

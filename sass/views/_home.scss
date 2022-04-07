@@ -1,0 +1,51 @@
+/*contenido home*/
+
+.home {
+    grid-area: section1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.izq {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    font-size: 3.6em;
+}
+
+.img {
+    
+    width: 50rem;
+    
+}
+
+
+.parrafo__home {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 1.9em;
+    width: 21em;
+}
+.boton__contacto {
+    color: #FBF5F3;
+    background-color: #29339B;
+    border-radius: 10px;
+    height: 3.5em;
+    width: 8em;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 1em;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+ .boton__contacto:hover {
+     color: #0C0C0C;
+     background-color: #D91E36;
+ }
