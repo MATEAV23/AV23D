@@ -14,14 +14,15 @@
     justify-content: center;
     align-items: center;
 }
+
 .titulo {
     font-size: 3.6em;
 }
 
 .img {
-    
+
     width: 50rem;
-    
+
 }
 
 
@@ -32,20 +33,24 @@
     font-size: 1.9em;
     width: 21em;
 }
+
+@mixin size-btn ($h, $w) {
+    height: $h;
+    width: $w;
+}
+
 .boton__contacto {
     color: #FBF5F3;
     background-color: #29339B;
     border-radius: 10px;
-    height: 3.5em;
-    width: 8em;
-    text-align: center;
+    @include size-btn(3.5em, 8em) text-align: center;
     font-size: 1.8em;
     padding-top: 1em;
     font-weight: bold;
     transition: all .3s ease;
 }
 
- .boton__contacto:hover {
-     color: #0C0C0C;
-     background-color: #D91E36;
- }
+.boton__contacto:hover {
+    color: #0C0C0C;
+    background-color: #D91E36;
+}

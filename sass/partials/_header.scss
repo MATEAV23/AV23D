@@ -1,3 +1,10 @@
+$paleta: (
+    'azul': #3c46b4,
+    'blanco': #FBF5F3,
+    'negro': #0C0C0C,
+    'rojo': red,  
+)
+
 /*header*/
 
 .justify-content-end {
@@ -5,24 +12,24 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #FBF5F3;
+    color: map-get($map: $paleta, $key: 'blanco' );
     font-size: 1.6em;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #3c46b4;
+    color: map-get($map: $paleta, $key: 'azul');
 }
 
 .bg-light {
     --bs-bg-opacity: 1;
-    background-color: #0C0C0C !important;
+    background-color: map-get($map: $paleta, $key: 'negro') !important;
 }
 
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: red;
-    border: red;
+    background-color: map-get($map: $paleta, $key: 'rojo');
+    border: map-get($map: $paleta, $key: 'rojo');
     border-radius: 0.25rem;
     transition: box-shadow .15s ease-in-out;
 }
@@ -54,14 +61,14 @@ header {
     }
 
     .menu__item {
-        color: #FBF5F3;
+        color: map-get($map: $paleta, $key: 'blanco');
         font-weight: bold;
-        border-bottom: 2px solid #0C0C0C;
+        border-bottom: 2px solid map-get($map: $paleta, $key: 'negro');
         transition: border-bottom .3s ease-in-out;
     }
 
     .menu__item:hover {
-        border-bottom: 2px solid #D91E36;
+        border-bottom: 2px solid map-get($map: $paleta, $key: 'rojo');
     }
 }
 
