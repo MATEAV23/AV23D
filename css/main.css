@@ -85,7 +85,7 @@ header {
     border-bottom: 2px solid #0C0C0C;
     transition: border-bottom .3s ease-in-out; }
   header .menu__item:hover {
-    border-bottom: 2px solid #D91E36; }
+    border-bottom: 2px solid red; }
 
 .menu .menu__item .menu__link {
   font-size: 1.6em;

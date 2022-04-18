@@ -43,7 +43,8 @@
     color: #FBF5F3;
     background-color: #29339B;
     border-radius: 10px;
-    @include size-btn(3.5em, 8em) text-align: center;
+    @include size-btn(3.5em, 8em);
+    text-align: center;
     font-size: 1.8em;
     padding-top: 1em;
     font-weight: bold;
